@@ -296,7 +296,7 @@ a {
         color: white;
         cursor: pointer;
         position: absolute;
-        top: 42.5%;
+		align-items: center;
         transform: translateY(-50%);
         z-index: 1;
     }
