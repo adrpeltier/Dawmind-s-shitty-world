@@ -179,7 +179,7 @@ a {
 }
 
 .project {
-    min-height: 600px;
+    min-height: 600px; 
 }
 
 .blog-post {
@@ -197,11 +197,41 @@ a {
 .blog-post h2, .project h2 {
     color: white;
     font-family: "Athiti", sans-serif;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.content {
+    align-items: flex-start; /* Aligner le texte et l'image en haut */
+}
+
+.project-image {
+    max-width: 100%; /* L'image s'adapte à la taille de son conteneur */
+    height: auto; /* Garde les proportions de l'image */
+    margin-right: 15px; /* Espacement entre l'image et le texte */
+	float: left;
 }
 
 .blog-post p, .project p {
     color: white;
     font-family: "Athiti", sans-serif;
+	font-size: 20px;
+}
+
+.project-link {
+	color: white;
+	font-family: "Roboto Mono", sans-serif;
+	font-size: 20px;
+	background-color: #718496;
+	border-radius: 10px;
+	border: none;
+	opacity: 0.8;
+	padding: 2px;
+	margin: 10px;
+}
+
+.project-link:hover {
+    opacity: 1;
 }
 
 .blog-post a {
@@ -254,7 +284,7 @@ a {
     font-size: 25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 	
 	.video-wrapper {
         flex: 1 1 100%; /* Une vidéo par ligne sur les écrans étroits */
@@ -312,9 +342,15 @@ a {
         width: 350px;
         height: 350px;
     }
+	
+	.project-image {
+    max-width: 65%; /* L'image s'adapte à la taille de son conteneur */
+    height: auto; /* Garde les proportions de l'image */
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 	body {
     background: linear-gradient(rgba(113, 132, 150, 1), rgba(129, 77, 125, 1));
 	}
